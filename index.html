@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReClaim BioPod - Natural Water Filtration Solutions</title>
+    <meta name="description" content="Sustainable water filtration products using natural biochar and mesquite wood chips for septic systems, aerobic systems, and rainwater runoff.">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3b0b332b3c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="index.html" class="flex items-center">
+                <span class="text-2xl font-bold text-earth-brown">ReClaim BioPod</span>
+            </a>
+            <div class="hidden md:flex space-x-8">
+                <a href="index.html" class="font-medium text-charcoal hover:text-earth-brown transition-colors">Home</a>
+                <a href="products.html" class="font-medium text-charcoal hover:text-earth-brown transition-colors">Products</a>
+                <a href="about.html" class="font-medium text-charcoal hover:text-earth-brown transition-colors">About</a>
+                <a href="contact.html" class="font-medium text-charcoal hover:text-earth-brown transition-colors">Contact</a>
+            </div>
+            <button id="mobile-menu-button" class="md:hidden text-charcoal focus:outline-none">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </nav>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="md:hidden hidden bg-white px-4 py-4 shadow-inner">
+            <a href="index.html" class="block py-2 font-medium text-charcoal hover:text-earth-brown transition-colors">Home</a>
+            <a href="products.html" class="block py-2 font-medium text-charcoal hover:text-earth-brown transition-colors">Products</a>
+            <a href="about.html" class="block py-2 font-medium text-charcoal hover:text-earth-brown transition-colors">About</a>
+            <a href="contact.html" class="block py-2 font-medium text-charcoal hover:text-earth-brown transition-colors">Contact</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative bg-gradient-to-r from-forest-green to-water-blue text-white">
+        <div class="container mx-auto px-4 py-20 md:py-32">
+            <div class="max-w-3xl">
+                <h1 class="mb-4 text-4xl md:text-5xl font-bold leading-tight">Natural Water Filtration Solutions</h1>
+                <p class="mb-8 text-xl">Sustainable, compostable BioPods made from mesquite wood chips and biochar for cleaner water and healthier environments.</p>
+                <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                    <a href="products.html" class="btn bg-white text-forest-green hover:bg-opacity-90 text-center">View Products</a>
+                    <a href="#how-it-works" class="btn bg-transparent border-2 border-white hover:bg-white hover:text-forest-green transition-colors text-center">How It Works</a>
+                </div>
+            </div>
+        </div>
+        <div class="absolute bottom-0 left-0 right-0 h-16 bg-white" style="clip-path: polygon(0 100%, 100% 100%, 100% 0);"></div>
+    </section>
+
+    <!-- Product Highlights -->
+    <section class="section bg-white">
+        <div class="container">
+            <h2 class="text-center mb-12 text-earth-brown">Our BioPod Solutions</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Aerobic System Polishing BioPod -->
+                <div class="card">
+                    <div class="h-48 relative overflow-hidden">
+                        <img src="images/aerobic-biopod.jpg" alt="Aerobic System Polishing BioPod" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Aerobic System Polishing BioPod</h3>
+                        <p class="text-gray-600 mb-4">Filters treated effluent before soil dispersal, ensuring cleaner water release into the environment.</p>
+                        <a href="products.html#aerobic" class="text-forest-green font-medium hover:underline inline-flex items-center">
+                            Learn more <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Septic Field Saver BioPod -->
+                <div class="card">
+                    <div class="h-48 relative overflow-hidden">
+                        <img src="images/septic-biopod-lawn.jpg" alt="Septic Field Saver BioPod" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Septic Field Saver BioPod</h3>
+                        <p class="text-gray-600 mb-4">Protects your drainfield by polishing septic tank outflow, extending the life of your septic system.</p>
+                        <a href="products.html#septic" class="text-forest-green font-medium hover:underline inline-flex items-center">
+                            Learn more <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Rainwater Runoff Polisher BioPod -->
+                <div class="card">
+                    <div class="h-48 relative overflow-hidden">
+                        <img src="images/rainwater-biopod.jpg" alt="Rainwater Runoff Polisher BioPod" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Rainwater Runoff Polisher BioPod</h3>
+                        <p class="text-gray-600 mb-4">Filters stormwater before it enters the environment, reducing pollutants in our waterways.</p>
+                        <a href="products.html#rainwater" class="text-forest-green font-medium hover:underline inline-flex items-center">
+                            Learn more <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section id="how-it-works" class="section bg-sand-beige">
+        <div class="container">
+            <h2 class="text-center mb-12 text-earth-brown">How ReClaim BioPods Work</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <img src="images/mesquite-tree.jpg" alt="Mesquite Tree - Source of BioPod Materials" class="rounded-lg shadow-lg w-full">
+                </div>
+                <div>
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 bg-forest-green rounded-full p-3 text-white mr-4">
+                                <i class="fas fa-leaf"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-semibold mb-2">Natural Materials</h3>
+                                <p>Our BioPods use locally sourced mesquite wood chips and biochar created using a sustainable 55-gallon drum method.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 bg-forest-green rounded-full p-3 text-white mr-4">
+                                <i class="fas fa-filter"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-semibold mb-2">Biological Filtration</h3>
+                                <p>BioPods create the perfect environment for beneficial microorganisms that break down contaminants naturally.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 bg-forest-green rounded-full p-3 text-white mr-4">
+                                <i class="fas fa-recycle"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-semibold mb-2">Sustainable & Compostable</h3>
+                                <p>When filtration media is spent, it can be composted, returning valuable carbon and nutrients to the soil.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits -->
+    <section class="section bg-white">
+        <div class="container">
+            <h2 class="text-center mb-12 text-earth-brown">Benefits of ReClaim BioPods</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="text-center p-6 border border-gray-200 rounded-lg">
+                    <div class="inline-block p-4 bg-forest-green rounded-full text-white mb-4">
+                        <i class="fas fa-tint text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Cleaner Water</h3>
+                    <p>Effectively removes contaminants for cleaner water discharge.</p>
+                </div>
+                <div class="text-center p-6 border border-gray-200 rounded-lg">
+                    <div class="inline-block p-4 bg-earth-brown rounded-full text-white mb-4">
+                        <i class="fas fa-hand-holding-heart text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Eco-Friendly</h3>
+                    <p>Made from sustainable materials that can be composted after use.</p>
+                </div>
+                <div class="text-center p-6 border border-gray-200 rounded-lg">
+                    <div class="inline-block p-4 bg-water-blue rounded-full text-white mb-4">
+                        <i class="fas fa-tools text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Easy Installation</h3>
+                    <p>Simple to install and integrate with existing systems.</p>
+                </div>
+                <div class="text-center p-6 border border-gray-200 rounded-lg">
+                    <div class="inline-block p-4 bg-leaf-green rounded-full text-white mb-4">
+                        <i class="fas fa-dollar-sign text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Cost-Effective</h3>
+                    <p>Extends the life of your systems while protecting the environment.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Call to Action -->
+    <section class="bg-forest-green text-white py-16">
+        <div class="container text-center">
+            <h2 class="mb-6">Ready to Improve Your Water Quality?</h2>
+            <p class="mb-8 max-w-2xl mx-auto text-lg">Discover how ReClaim BioPods can help you create a more sustainable water system while protecting the environment.</p>
+            <a href="contact.html" class="btn bg-white text-forest-green hover:bg-opacity-90">Contact Us Today</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-charcoal text-white pt-12 pb-6">
+        <div class="container">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">ReClaim BioPod</h3>
+                    <p class="text-gray-300">Sustainable water filtration solutions using natural materials for cleaner water and a healthier environment.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Products</h4>
+                    <ul class="space-y-2">
+                        <li><a href="products.html#aerobic" class="text-gray-300 hover:text-white transition-colors">Aerobic System Polishing BioPod</a></li>
+                        <li><a href="products.html#septic" class="text-gray-300 hover:text-white transition-colors">Septic Field Saver BioPod</a></li>
+                        <li><a href="products.html#rainwater" class="text-gray-300 hover:text-white transition-colors">Rainwater Runoff Polisher BioPod</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Company</h4>
+                    <ul class="space-y-2">
+                        <li><a href="about.html" class="text-gray-300 hover:text-white transition-colors">About Us</a></li>
+                        <li><a href="contact.html" class="text-gray-300 hover:text-white transition-colors">Contact</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors">FAQ</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Connect With Us</h4>
+                    <div class="flex space-x-4 mb-4">
+                        <a href="#" class="text-gray-300 hover:text-white transition-colors"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-gray-300 hover:text-white transition-colors"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-300 hover:text-white transition-colors"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-300 hover:text-white transition-colors"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    <p class="text-gray-300">Email: robert@reclaimbiopod.com</p>
+                    <p class="text-gray-300">Main Office: <a href="tel:+18012525155" class="text-gray-300 hover:text-white transition-colors">+1 801-252-5155</a></p>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 pt-6 text-center text-gray-400">
+                <p>&copy; 2025 ReClaim BioPod. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
